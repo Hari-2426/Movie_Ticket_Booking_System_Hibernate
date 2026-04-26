@@ -55,6 +55,7 @@ public class Movie {
 		this.rating = rating;
 		this.ticketPrice = ticketPrice;
 	}
+	
 	@Override
 	public String toString() {
 		return "Movie [movieId=" + movieId + ", movieName=" + movieName + ", movieType=" + movieType + ", rating="

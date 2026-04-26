@@ -17,22 +17,28 @@ public class TicketBookingTest {
 		
 		SessionFactory sf=HibernateConnections.getSessionFactory();
 		Session s=sf.openSession();
-		movieInsertion(s);
 		
+		
+		movieInsertion(s);
 		
 		bookingInsertion(s);
 		
 		bookingDetails(s);
+		
 		displayAllBookings(s);
 		
 		displayAllMovies(s);
+		
 		updatingTicketPrice(s);
+		
 		updatingNoOfTickets(s);
 		
 		updatingTotalPrice(s);
 		
 		deletionOfRecord(s);
 		
+		s.close();
+		sf.close();
 	}
 
 	private static void deletionOfRecord(Session s) {
