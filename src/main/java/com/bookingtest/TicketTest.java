@@ -18,20 +18,28 @@ public class TicketTest {
 		Session s=sf.openSession();
 		
 		fetchingAllMovies(s);
+		System.out.println("---------------------------");
 		
 		fetchingMoviesByRating(s);
+		System.out.println("---------------------------");
 		
 		extracted(s);
+		System.out.println("---------------------------");
 		
 		sortingBasedOnTicketPrice(s);
+		System.out.println("---------------------------");
 		
 		findingMaxTicketPrice(s);
+		System.out.println("---------------------------");
 		
 		averageOfTicketPrices(s);
+		System.out.println("---------------------------");
 		
 		updateTicketPriceUsingHQL(s);
+		System.out.println("---------------------------");
 		
 		deleteMoviesByRating(s);
+		System.out.println("---------------------------");
 		
 		s.close();
 		sf.close();

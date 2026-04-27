@@ -6,7 +6,7 @@
     <session-factory>
 
           <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.password">root123</property>
+        <property name="hibernate.connection.password">password</property>
         <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/ticketbooking</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.default_schema">ticketbooking</property>

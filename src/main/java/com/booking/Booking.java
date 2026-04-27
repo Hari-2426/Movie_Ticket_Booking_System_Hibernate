@@ -13,6 +13,7 @@ public class Booking {
 	private int movieId;
 	private  int  noOfTickets;
 	
+	
 	private  double totalAmount;
 	public int getBookingId() {
 		return bookingId;
